@@ -1,6 +1,113 @@
 extends layout
 
 block content
-  h1 About
-  p This section will have some basic write-ups of various topics, fairly static and concise.
-  
+  div.container-fluid
+    h1.display-1.text-right About
+    div.row
+      div.col-1
+      div.col-10.aboutText.py-3
+        h5 Thanks for taking the time to consider my work.
+        p.
+          I'm always glad for opportunities, feedback, criticism (of the constructive 
+          variety), or concise pointers on how my work here could be improved.
+          Below is a little more detail on who I am as a person, and what I
+          invest myself in day-by-day. I've also tried to articulate my narrative
+          a bit, by way of setting up the context for anyone interested. Good ideas
+          deserve good words, so if you spot anything that isn't clear, feel free
+          to ask me about it!
+      div.col-1
+    
+    div.row
+      div.col-1
+      div.col-10.aboutText
+        #aboutAccordion.accordion
+          h5.aboutTextDivider.py-3
+            a(data-toggle='collapse', href='#synopsisParagraph') Synopsis
+          #synopsisParagraph.collapse(data-parent='#aboutAccordion')
+            p
+              p.
+                I am a blend of Social Service provider, Programmer/Developer, 
+                Team Leader, and Communicator. That's a strange combination, even on
+                my own evaluation, but it's proven a good journey into what I'm doing now.
+              p.
+                I’ve invested recent years pursuing a deep fascination for Computer
+                Science and Project Management, with a bend toward software development 
+                in several langauges/frameworks (i.e. Java, Python, MEAN-stack, and R).
+                I also have experience in (and a love for) Data Science techniques and 
+                technologies. That includes machine learning, and the blend of 
+                data-acquisition, analysis, visualization, and presentation that leads 
+                to actionable results.
+              p.
+                I find the iterative nature of software development and data science
+                both engaging and engrossing. I’ve yet to cycle through it, on any 
+                project, and love it less. There are, woven throughout this work, 
+                methodical and systematic similarities to counseling and social work 
+                that I see more of each day. I’ve also yet to hit a day when I don’t 
+                want to learn something.
+          h5.aboutTextDivider.py-3
+            a(data-toggle='collapse', href='#storyParagraph') The Story So Far...
+          #storyParagraph.collapse(data-parent='#aboutAccordion')
+            p
+              p.
+                A quick scan through “The History of Nathaniel Moody” would not leave 
+                you gasping for breath. I’ve enjoyed my life, but it isn’t anything 
+                someone would write about (other than me, of course). That’s fine by 
+                me. It fits with one of my most central, driving convictions: Simple, 
+                consistent goodness is more influential than grand, momentary actions, 
+                even if it isn’t more noticeable. I’m guessing, however, that you 
+                didn’t land here to listen in on my ethical musings.
+              p.
+                I started to consider myself “interested” in computer science sometime 
+                in Junior High, when that magic blend of awkwardness and irrationality 
+                led me to invest in a LOT of screen-time. I learned all the corners 
+                of Windows 95. Anything I could open, edit, tweak, and (often) break, 
+                was fair game for my curiosity. When High School rolled around, I 
+                took a course in C++, while also taking classes in Latin and Etymology. 
+                I’m sure those fit together somehow, but by the time I was in college 
+                my interests had steered me more toward the Arts and Social Sciences. 
+                I stepped into my post-college life with a deep desire to help and 
+                value people, and began a career in that direction.
+              p.
+                With a Bachelor’s in Psychology, I invested myself into a fascinating 
+                MA in Counseling (non-licensed track) that explored the intersection 
+                of human nature, hope, narrative-thinking, and faith. My first 
+                full-time job landed my safely at the crossroads of these concepts: 
+                Case-Manager and LifeCoach for teenagers in trouble with the law and 
+                families in trouble with DCS.
+              p.
+                After a couple years, I sidestepped into a temporary position to learn 
+                more intensive, crisis-focused counseling methods, and then made my 
+                way onto the Indiana University campus as a “pastoral counselor” 
+                (which is code for a minister who takes a lot of time to sit down and 
+                intentionally talk with people).
+              p.
+                Which brings us up to today. I love my work with students and individuals 
+                in my city. These past years have brought many opportunities to 
+                ascribe value to the person I’m talking with, encourage her, listen 
+                to him, help bring clarity and comfort and (when the time is right) 
+                some counsel for the next steps. I’ve also found myself drawn, 
+                more and more, into the methodical, intricate, elegant processes of 
+                software development, data science, and project management. The 
+                connections between my current career and these areas of study deserve 
+                a conversation to themselves, but that’s a topic for another day. 
+                This interest developed into fascination, and led me into a MS in 
+                Data Science with IU’s School of Informatics and Computing, beginning 
+                in the Fall of 2016.
+          h5.aboutTextDivider.py-3
+            a(data-toggle='collapse', href='#nextParagraph') The Next Chapter...
+          #nextParagraph.collapse(data-parent='#aboutAccordion')
+            p
+              p.
+                There are so many things on the horizon of life these days. My wife 
+                and I have just adopted our first child. We are newly moved to Indianapolis, 
+                where I've just begun a position with an IT consulting firm. I’m also 
+                closing in on the final credit hours of this program through IU. That 
+                leaves me settling in, reflecting, and doing my best to navigate all
+                these changes in life with a mixture of excitement and anticipation. 
+                I'm not sure how this will shake out, but to quote one of my favorite 
+                movies:
+              blockquote.blockquote.text-center
+                p "Adventure is out there!"
+                footer.blockquote-footer Up
+      div.col-1
+    div.mdSpacer

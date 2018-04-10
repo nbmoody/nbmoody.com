@@ -2,36 +2,44 @@ doctype html
 html
   head
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    title= title
+    meta(lang='en', charset='utf-8')
+    title= 'nbmoody.com'
     link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/font-awesome.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
       
       
   body
+    // JUMBOTRON
+    div.container-fluid.p-0.m-0
+      div.jumbotron.jumbotron-fluid.px-0.py-1.m-0
+        img.img-fluid.float-right.rounded-circle.jumbotronImg.my-0.mr-3(src='/images/headshot.jpg')
+        h1.text-dark.m-1 N.B.Moody
+        h3.text-dark.my-1.ml-3 Communicator | Explorer | Developer
+    
     // NAVBAR
-    nav.navbar.fixed-top.navbar-expand-sm.navbar-light
-      a.navbar-brand(href='/') nbmoody.com
-      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navBarCollapse')
-        span.navbar-toggler-icon
-      #navBarCollapse.collapse.navbar-collapse
-        ul.navbar-nav.mr-auto
-          li.nav-item
-            a.nav-link(href='/') Home
-          li.nav-item
-            a.nav-link(href='/') Portfolio
-          li.nav-item
-            a.nav-link(href='/about/') About
+    div.container-fluid.p-0.m-0.sticky-top
+      nav.navbar.navbar-expand-sm.navbar-dark.mb-2
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navBarCollapse')
+          span.navbar-toggler-icon
+        #navBarCollapse.collapse.navbar-collapse
+          ul.navbar-nav
+            li.nav-item
+              a.nav-link(href='/') Home
+            li.nav-item
+              a.nav-link(href='/portfolio') Portfolio
+            li.nav-item
+              a.nav-link(href='/about/') About
+            li.nav-item
+              a.nav-link(href='/contact/') Contact
             
     // MAIN BODY
-    div.row
-      div.col-sm-12
-        block content
+    div.container-fluid
+      block content
           
     // FOOTER
-    div.row
-      div.col-sm-12
-        small &copy; Nathaniel Moody 2018
+    div.container-fluid.footer.fixed-bottom
+      p.text-right.m-0.p-0 &copy; Nathaniel B. Moody 2018
         
   // SCRIPTS
   script(src='https://code.jquery.com/jquery-3.1.1.slim.min.js')

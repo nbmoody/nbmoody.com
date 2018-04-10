@@ -1,7 +1,12 @@
 extends layout
 
 block content
-  h1 Aw snap, something went wrong...
-  h2= message
-  h3= error.status
-  pre #{error.stack}
+  div.container-fluid
+    h1 Aw snap, something went wrong...
+    p Sorry about that. If this keeps up, let me know so I can fix the bug.
+    img.img-fluid(src='/images/thumbsDown.png', alt='Thumbs Down')
+    hr
+  div.container-fluid
+    h2= message
+    h3= error.status
+    pre #{error.stack}
