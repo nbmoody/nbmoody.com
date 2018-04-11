@@ -23,20 +23,13 @@ block content
         div.col-sm-5
           img.img-fluid(src= project.imagePath, alt='Project Image')
         div.col-sm-7
-          #project1Accordion.accordion
-            div.card
-              div.card-header
-                div.card-title
-                  h3
-                    a.card-link(data-toggle='collapse', href='#p1collapse1')= project.title
-              #p1collapse1.collapse.show(data-parent='#project1Accordion')
-                div.card-body
-                  a(href= project.linkURL target='_blank') Go to this project's page...
-                  div.tags
-                    each tag in project.tags
-                      span.badge.badge-warning= tag
-              div.card-header
-                a.card-link(data-toggle='collapse', href='#p1collapse2') Summary
-              #p1collapse2.collapse(data-parent='#project1Accordion')
-                div.card-body= project.summary
+          h3.mt-3.mb-5
+            a(href= project.linkURL target='_blank')= project.title
+            div.tags
+              each tag in project.tags
+                span.badge.badge-warning= tag
+          h5 Summary
+          p= project.summary
+          p.bottomText
+            a(href= project.linkURL target='_blank') (Go to this project's page...)
   div.smSpacer
