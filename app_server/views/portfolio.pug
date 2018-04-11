@@ -16,151 +16,20 @@ block content
         div.aboutText.p-3
           .lead Good exploration yields insight,
           p and Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus urna nisl, consectetur vel malesuada sit amet, consectetur sed velit. Etiam commodo, orci non egestas sagittis, quam velit efficitur sem, ut auctor tellus mauris at ligula. Donec pulvinar feugiat suscipit. Ut sollicitudin sem quis commodo semper.
-  div.container-fluid
-    div.row.aboutText.d-flex.justify-content-center.m-3
-      div.col-sm-5
-        img.img-fluid(src='/images/placeholder.png', alt='Project Image')
-      div.col-sm-7
-        #project1Accordion.accordion
-          div.card
-            div.card-header
-              div.card-title
-                h3
-                  a.card-link(data-toggle='collapse', href='#p1collapse1') Title of Project
-            #p1collapse1.collapse.show(data-parent='#project1Accordion')
-              div.card-body
-                a(href="https://plot.ly/~nbmoody/7.embed" target='_blank') Go to this project...
-                div.tags
-                  span.badge.badge-warning Data Science
-                  span.badge.badge-warning Python
-                  span.badge.badge-warning Jupyter Notebook
-                  span.badge.badge-warning Github
-            div.card-header
-              a.card-link(data-toggle='collapse', href='#p1collapse2') Summary
-            #p1collapse2.collapse(data-parent='#project1Accordion')
-              div.card-body Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus urna nisl, consectetur vel malesuada sit amet, consectetur sed velit. Etiam commodo, orci non egestas sagittis, quam velit efficitur sem, ut auctor tellus mauris at ligula. Donec pulvinar feugiat suscipit. Ut sollicitudin sem quis commodo semper.
-        
-  //- div.container-fluid
-  //-   .row.d-flex.justify-content-center
-  //-     .col-12.col-lg-4
-  //-       .card
-  //-         img.card-img-top(src="/images/placeholder.png", alt="Project Image")
-  //-         #project1Accordion.accordion
-  //-           div.card-header
-  //-             div.card-title
-  //-               h3
-  //-                 a.card-link(data-toggle='collapse', href='#p1collapse1') Title of Project
-  //-           #p1collapse1.collapse.show(data-parent='#project1Accordion')
-  //-             div.card-body
-  //-               a(href="https://plot.ly/~nbmoody/7.embed" target='_blank') Go to this project...
-  //-               div.tags
-  //-                 span.badge.badge-warning Data Science
-  //-                 span.badge.badge-warning Python
-  //-                 span.badge.badge-warning Jupyter Notebook
-  //-                 span.badge.badge-warning Github
-  //-           div.card-header
-  //-             a.card-link(data-toggle='collapse', href='#p1collapse2') Summary
-  //-           #p1collapse2.collapse(data-parent='#project1Accordion')
-  //-             div.card-body Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus urna nisl, consectetur vel malesuada sit amet, consectetur sed velit. Etiam commodo, orci non egestas sagittis, quam velit efficitur sem, ut auctor tellus mauris at ligula. Donec pulvinar feugiat suscipit. Ut sollicitudin sem quis commodo semper.
-  //-     .col-12.col-lg-4
-  //-       div.card
-  //-         img.card-img-top(src="/images/placeholder.png", alt="Project Image")
-  //-         #project2Accordion.accordion
-  //-           div.card-header
-  //-             div.card-title
-  //-               h3
-  //-                 a.card-link(data-toggle='collapse', href='#p2collapse1') Title of Project
-  //-           #p2collapse1.collapse.show(data-parent='#project2Accordion')
-  //-             div.card-body
-  //-               a(href="https://plot.ly/~nbmoody/7.embed" target='_blank') Go to this project...
-  //-               div.tags
-  //-                 span.badge.badge-warning Data Science
-  //-                 span.badge.badge-warning Python
-  //-                 span.badge.badge-warning Jupyter Notebook
-  //-                 span.badge.badge-warning Github
-  //-           div.card-header
-  //-             a.card-link(data-toggle='collapse', href='#p2collapse2') Summary
-  //-           #p2collapse2.collapse(data-parent='#project2Accordion')
-  //-             div.card-body Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus urna nisl, consectetur vel malesuada sit amet, consectetur sed velit. Etiam commodo, orci non egestas sagittis, quam velit efficitur sem, ut auctor tellus mauris at ligula. Donec pulvinar feugiat suscipit. Ut sollicitudin sem quis commodo semper.
-  //-     .col-12.col-lg-4
-  //-       div.card
-  //-         img.card-img-top(src="/images/placeholder.png", alt="Project Image")
-  //-         #project3Accordion.accordion
-  //-           div.card-header
-  //-             div.card-title
-  //-               h3
-  //-                 a.card-link(data-toggle='collapse', href='#p3collapse1') Title of Project
-  //-           #p3collapse1.collapse.show(data-parent='#project3Accordion')
-  //-             div.card-body
-  //-               a(href="https://plot.ly/~nbmoody/7.embed" target='_blank') Go to this project...
-  //-               div.tags
-  //-                 span.badge.badge-warning Data Science
-  //-                 span.badge.badge-warning Python
-  //-                 span.badge.badge-warning Jupyter Notebook
-  //-                 span.badge.badge-warning Github
-  //-           div.card-header
-  //-             a.card-link(data-toggle='collapse', href='#p3collapse2') Summary
-  //-           #p3collapse2.collapse(data-parent='#project3Accordion')
-  //-             div.card-body Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus urna nisl, consectetur vel malesuada sit amet, consectetur sed velit. Etiam commodo, orci non egestas sagittis, quam velit efficitur sem, ut auctor tellus mauris at ligula. Donec pulvinar feugiat suscipit. Ut sollicitudin sem quis commodo semper.
-  //-   .row.d-flex.justify-content-center
-  //-     .col-12.col-lg-4
-  //-       div.card
-  //-         img.card-img-top(src="/images/placeholder.png", alt="Project Image")
-  //-         #project4Accordion.accordion
-  //-           div.card-header
-  //-             div.card-title
-  //-               h3
-  //-                 a.card-link(data-toggle='collapse', href='#p4collapse1') Title of Project
-  //-           #p4collapse1.collapse.show(data-parent='#project4Accordion')
-  //-             div.card-body
-  //-               a(href="https://plot.ly/~nbmoody/7.embed" target='_blank') Go to this project...
-  //-               div.tags
-  //-                 span.badge.badge-warning Data Science
-  //-                 span.badge.badge-warning Python
-  //-                 span.badge.badge-warning Jupyter Notebook
-  //-                 span.badge.badge-warning Github
-  //-           div.card-header
-  //-             a.card-link(data-toggle='collapse', href='#p4collapse2') Summary
-  //-           #p4collapse2.collapse(data-parent='#project4Accordion')
-  //-             div.card-body Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus urna nisl, consectetur vel malesuada sit amet, consectetur sed velit. Etiam commodo, orci non egestas sagittis, quam velit efficitur sem, ut auctor tellus mauris at ligula. Donec pulvinar feugiat suscipit. Ut sollicitudin sem quis commodo semper.
-  //-     .col-12.col-lg-4
-  //-       div.card
-  //-         img.card-img-top(src="/images/placeholder.png", alt="Project Image")
-  //-         #project5Accordion.accordion
-  //-           div.card-header
-  //-             div.card-title
-  //-               h3
-  //-                 a.card-link(data-toggle='collapse', href='#p5collapse1') Title of Project
-  //-           #p5collapse1.collapse.show(data-parent='#project5Accordion')
-  //-             div.card-body
-  //-               a(href="https://plot.ly/~nbmoody/7.embed" target='_blank') Go to this project...
-  //-               div.tags
-  //-                 span.badge.badge-warning Data Science
-  //-                 span.badge.badge-warning Python
-  //-                 span.badge.badge-warning Jupyter Notebook
-  //-                 span.badge.badge-warning Github
-  //-           div.card-header
-  //-             a.card-link(data-toggle='collapse', href='#p5collapse2') Summary
-  //-           #p5collapse2.collapse(data-parent='#project5Accordion')
-  //-             div.card-body Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus urna nisl, consectetur vel malesuada sit amet, consectetur sed velit. Etiam commodo, orci non egestas sagittis, quam velit efficitur sem, ut auctor tellus mauris at ligula. Donec pulvinar feugiat suscipit. Ut sollicitudin sem quis commodo semper.
-  //-     .col-12.col-lg-4
-  //-       div.card
-  //-         img.card-img-top(src="/images/placeholder.png", alt="Project Image")
-  //-         #project6Accordion.accordion
-  //-           div.card-header
-  //-             div.card-title
-  //-               h3
-  //-                 a.card-link(data-toggle='collapse', href='#p6collapse1') Title of Project
-  //-           #p6collapse1.collapse.show(data-parent='#project6Accordion')
-  //-             div.card-body
-  //-               a(href="https://plot.ly/~nbmoody/7.embed" target='_blank') Go to this project...
-  //-               div.tags
-  //-                 span.badge.badge-warning Data Science
-  //-                 span.badge.badge-warning Python
-  //-                 span.badge.badge-warning Jupyter Notebook
-  //-                 span.badge.badge-warning Github
-  //-           div.card-header
-  //-             a.card-link(data-toggle='collapse', href='#p6collapse2') Summary
-  //-           #p6collapse2.collapse(data-parent='#project6Accordion')
-  //-             div.card-body Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus urna nisl, consectetur vel malesuada sit amet, consectetur sed velit. Etiam commodo, orci non egestas sagittis, quam velit efficitur sem, ut auctor tellus mauris at ligula. Donec pulvinar feugiat suscipit. Ut sollicitudin sem quis commodo semper.
-  div.container-fluid.smSpacer
+  div.smSpacer
+  each project in projects
+    div.container-fluid
+      div.row.aboutText.d-flex.justify-content-center.m-3
+        div.col-sm-5
+          img.img-fluid(src= project.imagePath, alt='Project Image')
+        div.col-sm-7
+          h3.mt-3.mb-5
+            a(href= project.linkURL target='_blank')= project.title
+            div.tags
+              each tag in project.tags
+                span.badge.badge-warning= tag
+          h5 Summary
+          p= project.summary
+          p.bottomText
+            a(href= project.linkURL target='_blank') (Go to this project's page...)
+  div.smSpacer
