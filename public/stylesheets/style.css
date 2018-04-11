@@ -69,6 +69,10 @@ h1.display-1 {
   bottom: 0;
 }
 
+.equalSize {
+  height: 300px;
+}
+
 .footer {
   background-color: var(--accent-color1);
 }
