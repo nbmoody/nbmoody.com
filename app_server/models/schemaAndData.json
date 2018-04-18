@@ -1,0 +1,29 @@
+/* projects */
+{
+  "imagePath": "/images/address_lookup_app.png",
+  "title": "Address Lookup App",
+  "linkURL": "https://nbmoody.shinyapps.io/addresslookup/",
+  "tags": ["R", "RStudio", "Shiny", "Leaflet"],
+  "summary": "This web-app was a learning-project I completed in 2017, integrating my understanding of the R programming language with cloud-based app hosting services like RStudio's Shinyapps.io and the Shiny app-development package. This project also allowed me the opportunity to write my own miniature package to utilize the GoogleMaps API and the Leaflet package for converting an address into lat/long coordinates and returning a map view."
+},
+{
+  "imagePath": "/images/breast_cancer_project.png",
+  "title": "Wisconsin Breast Cancer Dataset Project",
+  "linkURL": "https://github.com/nbmoody/BreastCancerDataAnalysis",
+  "tags": ["Python", "Data Science", "Machine Learning", "Github"],
+  "summary": "I completed this data science project as a way of combining my understanding of the Python programming language with concepts and methods about supervised machine-learning, data-wrangling/feature-selection, and data-visualization. While the actual results of this project are admittedly elementary, completing the entire process from start-to-finish was fascinating. This project provided a better grasp of the nuance that goes into data analysis and the profound potential of machine learning to augment scientific exploration."
+},
+{
+  "imagePath": "/images/social_media_mining_project.png",
+  "title": "Social Media Mining Project",
+  "linkURL": "https://github.com/nbmoody/Social-Media-Mining-Project",
+  "tags": ["Python", "NLP", "API", "Social Media Mining", "Github"],
+  "summary": "I worked through this research project alongside two colleagues, formulating a basic data-oriented question and pursuing an answer through the collection, analysis, and consolidation of a social-media dataset. This project uniquely required me to write a data-collection and cleaning script that would use social-media APIs to access and select the features desired for our research. Though our ultimate conclusion was humbling (the data we collected could NOT accurately yield the prediction we desired), it was a valuable effort nonetheless."
+},
+{
+  "imagePath": "/images/CRebellion_game.png",
+  "title": "CRebellion",
+  "linkURL": "https://github.com/nbmoody/Crebellion",
+  "tags": ["C", "Command Line Application", "Github"],
+  "summary": "I've included this project as a demonstration of some effort I put into learning more foundational programming skills. A couple years ago I realized that most of my work was quick script-writing done in high-level langauges. I wanted to at least experience some rudimentary development in C, which always feels like the great-grandfather of the langauges I tend to use. There isn't anything flashy about this project, being just a command-line application, but it was fascinating to handle the differences between C and, for example, Python or even Java."
+}

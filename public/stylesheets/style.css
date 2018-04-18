@@ -1,4 +1,3 @@
-@import url("//fonts.googleapis.com/css?family=Lobster|Cabin:400,700");
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 
@@ -67,6 +66,10 @@ h1.display-1 {
   position: absolute;
   left: 0;
   bottom: 0;
+}
+
+.equalSize {
+  height: 300px;
 }
 
 .footer {
