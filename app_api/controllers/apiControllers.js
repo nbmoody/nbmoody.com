@@ -29,9 +29,28 @@ const projectsList = function (req, res) {
 };
 
 const projectsCreate = function (req, res) {
-  res
-    .status(200)
-    .json({"status": "success"});
+  projectsModel.create(
+    // This first takes some data (must fit the validation in the schema!)
+    {imagePath: req.body.imagePath,
+      title: req.body.title,
+      linkURL: req.body.linkURL,
+      tags: req.body.tags.split(","),
+      summary: req.body.summary
+    },
+    // Then the .create takes a callback function, which responds to the POST accordingly.
+    (err, project) => {
+    if(err) {
+      res
+        .status(400)
+        .json(err);
+      console.log("Error thrown: " + err);
+    } else {
+      res
+        .status(201)
+        .json(project);
+      console.log("Success! Document created: " + project.title);
+    }
+  });
 };
 
 const projectsReadOne = function (req, res) {
