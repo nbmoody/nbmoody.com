@@ -1,9 +1,8 @@
 const mongoose = require('mongoose');
 const readLine = require('readline');
 
- // TODO: Need to stick this login info into an environment variable
- // instead of my source, but later.
-const dbURI = 'mongodb://simpleuser:simplepassword1@ds141786.mlab.com:41786/portfolio'
+
+const dbURI = process.env.MLAB_URI
 
 // Mongoose schema for the documents that will be accessed from MongoDB in mLab.
 const projectSchema = new mongoose.Schema({
