@@ -5,7 +5,7 @@ const apiOptions = {
   server : 'http://localhost:3000'
 };
 if(process.env.NODE_ENV === 'production') {
-  apiOptions.server = process.env.MLAB_URI;
+  apiOptions.server = 'https://peaceful-meadow-26857.herokuapp.com/';
 }
 
 // Rendering function for the portoflio
