@@ -11,11 +11,9 @@ const projectSchema = new mongoose.Schema({
     type: String,
     'default': '/images/placeholder.png'},
   title: {
-    type: String,
-    'default': 'Project Title'},
+    type: String},
   linkURL: {
-    type: String,
-    'default': '#'},
+    type: String},
   tags: [String],
   summary: String
 });

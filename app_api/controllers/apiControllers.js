@@ -87,15 +87,82 @@ const projectsReadOne = function (req, res) {
 };
 
 const projectsUpdateOne = function (req, res) {
-  res
-    .status(200)
-    .json({"status": "success"});
+  if(!req.params.projectid) {
+    res
+      .status(404)
+      .json({
+        "message": "projectid not found in paramters."
+      });
+    console.log("Error: projectid was not in the paramters passed with the request.");
+    return;
+  }
+  projectsModel
+    .findById(req.params.projectid)
+    .select()
+    .exec((err, project) => {
+      if(!project) {
+        res
+          .status(404)
+          .json({
+            "message": "project not found under that id."
+          });
+        console.log("Error: No project was found under that ID.");
+        return;
+      } else if(err) {
+        res
+          .status(400)
+          .json(err);
+        console.log("Error: " + err);
+        return;
+      }
+      project.imagePath = req.body.imagePath;
+      project.title = req.body.title;
+      project.linkURL = req.body.linkURL;
+      project.tags = req.body.tags.split(",");
+      project.summary = req.body.summary;
+      project.save((err, project) => {
+        if(err) {
+          res
+            .status(404)
+            .json(err);
+          console.log("Error when trying to save: " + err);
+        } else {
+          res
+            .status(200)
+            .json(project);
+          console.log("Success! Document update:" + project.title);
+        }
+      });
+    }
+  );
 };
 
 const projectsDeleteOne = function (req, res) {
-  res
-    .status(200)
-    .json({"status": "success"});
+  const projectid = req.params.projectid;
+  if(projectid) {
+    projectsModel
+      .findByIdAndRemove(projectid)
+      .exec((err, project) => {
+        if(err) {
+          res
+            .status(404)
+            .json(err);
+          console.log("Error: " + err);
+          return;
+        }
+        res
+          .status(204)
+          .json(null);
+        console.log("Success! Document Deleted: " + projectid);
+      }
+    );
+  } else {
+    res
+      .status(404)
+      .json({
+        "message": "No projectid"
+      });
+  }
 };
 
 
