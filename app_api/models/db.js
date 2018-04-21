@@ -7,9 +7,13 @@ const dbURI = 'mongodb://simpleuser:simplepassword1@ds141786.mlab.com:41786/port
 
 // Mongoose schema for the documents that will be accessed from MongoDB in mLab.
 const projectSchema = new mongoose.Schema({
-  imagePath: {type: String, default: '/images/placeholder.png'},
-  title: {type: String, default: 'Project Title'},
-  linkURL: {type: String, default: '#'},
+  imagePath: {
+    type: String,
+    'default': '/images/placeholder.png'},
+  title: {
+    type: String},
+  linkURL: {
+    type: String},
   tags: [String],
   summary: String
 });
