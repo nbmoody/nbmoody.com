@@ -4,9 +4,9 @@ const request = require('request'); // Use the request package for http requests
 const apiOptions = {
   server : 'http://localhost:3000'
 };
-/*if(process.env.NODE_ENV === 'production') {
-  apiOptions.server = 'https://<hosting-environment-here>';
-}*/
+if(process.env.NODE_ENV === 'production') {
+  apiOptions.server = 'https://peaceful-meadow-26857.herokuapp.com';
+}
 
 // Rendering function for the portoflio
 const _renderPortfolio = function(req, res, responseBody){
