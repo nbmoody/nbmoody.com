@@ -1,3 +1,5 @@
+require('dotenv').config({path: 'envVars.env'});
+console.log(process.env.MLAB_URI);
 const express = require('express');
 const path = require('path');
 const favicon = require('serve-favicon');
