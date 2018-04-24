@@ -25,7 +25,7 @@ block content
   div.smSpacer
   each project in projects
     div.container-fluid
-      div.row.aboutText.d-flex.justify-content-center.m-3
+      div.row.aboutText.d-flex.justify-content-center.m-3.border.border-white
         div.col-sm-5
           img.img-fluid(src= project.imagePath, alt='Project Image')
         div.col-sm-7
@@ -36,6 +36,4 @@ block content
                 span.badge.badge-warning= tag
           h5 Summary
           p= project.summary
-          p.bottomText
-            a(href= project.linkURL target='_blank') (Go to this project's page...)
   div.smSpacer

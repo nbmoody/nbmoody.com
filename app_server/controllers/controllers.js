@@ -50,15 +50,15 @@ const about = function(req, res) {
   res.render('about', {title:'About'});
 };
 
-/* GET 'contact' page */
-const contact = function(req, res) {
+/* GET 'contact' page (This will have to be added on later down the road.) */
+/*const contact = function(req, res) {
   res.render('contact', {title:'Contact'});
-}
+}*/
 
 
 module.exports = {
   welcome,
   portfolio,
   about,
-  contact
+  //contact
 };
