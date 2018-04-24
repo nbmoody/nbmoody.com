@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const readLine = require('readline');
 
 
-const dbURI = process.env.MLAB_URI
+const dbURI = process.env.MLAB_URI;
 
 // Mongoose schema for the documents that will be accessed from MongoDB in mLab.
 const projectSchema = new mongoose.Schema({

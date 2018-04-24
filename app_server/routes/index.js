@@ -13,6 +13,6 @@ router.get('/portfolio', ctrl.portfolio);
 router.get('/about/', ctrl.about);
 
 /* Contact page */
-router.get('/contact/', ctrl.contact);
+/*router.get('/contact/', ctrl.contact);*/
 
 module.exports = router;
